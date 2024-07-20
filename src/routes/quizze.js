@@ -5,7 +5,7 @@ const {
 } = require('../controllers/quizzesController');
 const router = express.Router();
 
-router.get('/quizzes', getAllQuizzes);
-router.get('/quizzes/:id', getQuizzeById);
+router.get('/quiz', getAllQuizzes);
+router.get('/quiz/:id', getQuizzeById);
 
 module.exports = router;

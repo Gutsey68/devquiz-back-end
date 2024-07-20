@@ -3,9 +3,12 @@ const userRoutes = require('./src/routes/user');
 const quizzeRoutes = require('./src/routes/quizze');
 const questionRoutes = require('./src/routes/question');
 const optionRoutes = require('./src/routes/option');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
+
+app.use(cors());
 
 app.use(express.json());
 
